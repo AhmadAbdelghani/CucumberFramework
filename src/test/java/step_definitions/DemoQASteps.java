@@ -61,7 +61,6 @@ public class DemoQASteps {
 	    utils.alertAccept();
 	    utils.waitUntilElementVisible(demoPage.Alert1);
 	}
-	
 	// Alert 1 steps Ends
 	
 	
