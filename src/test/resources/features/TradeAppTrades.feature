@@ -1,7 +1,7 @@
 Feature: As a user I am able to perform Trade app add trade functions
   I want to add, delete, update trades
 
-  @AddTrade #@SmokeTests
+  @AddTrade @SmokeTests  @TradeJournal
   Scenario: As a user i want to add a trade
     Given I am on the Trade app login page
     When I enter username "Ahmad" and password "SuperAhmad123!"
@@ -14,7 +14,7 @@ Feature: As a user I am able to perform Trade app add trade functions
     Then THE Trade is displayed on the Trade table
     And The trade data is deleted on the Database
 
-  @AddTradeWithTableData  #@SmokeTest
+  @AddTradeWithTableData  @SmokeTests  @TradeJournal
   Scenario: As a user i want to add a trade
     Given I am on the Trade app login page
     When I enter username "Ahmad" and password "SuperAhmad123!"
@@ -31,7 +31,7 @@ Feature: As a user I am able to perform Trade app add trade functions
     
     
     
-    @AddTradeAndValidate  #@SmokeTest
+    @AddTradeAndValidate  @SmokeTests @TradeJournal
   Scenario: As a user i want to add a trade
     Given I am on the Trade app login page
     When I enter username "Ahmad" and password "SuperAhmad123!"
