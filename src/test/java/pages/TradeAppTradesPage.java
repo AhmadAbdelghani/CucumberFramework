@@ -70,6 +70,12 @@ public class TradeAppTradesPage {
 	@FindBy(xpath  = "//table[@class='table table-bordered table-striped']/tbody/tr/td[4]")
 	public List<WebElement> stockEntryPrices;
 	
+	@FindBy (xpath = "//input[@name='symbol']")
+	public  WebElement symbolBox;
+	
+	@FindBy (xpath = "(//button[@type='submit'])[1]")
+	public  WebElement searchBtn;
+	
 	
 	
 	
