@@ -172,7 +172,7 @@ public class TradeAppTrades {
 	
 	@When("I search the {string} on")
 	public void i_search_the_on(String tradeSymbol) {
-		
+		utils.waitUntilElementVisible(tardeAppPage.symbolBox);
 		tardeAppPage.symbolBox.sendKeys(tradeSymbol);
 	   
 	}
