@@ -46,7 +46,7 @@ Feature: As a user I am able to perform Trade app add trade functions
     And the trade data resides in database correctly
     And The trade data is deleted on the Database
     
-    @InsertDB
+    @InsertDB  @TradeJournal @TradeJournal
     Scenario: As a user, I am able to insert a trade to Database
     Given I executed Insert query with the following data to Database
     |'23'|'1'|'0'|'Jmeter'|'2021-10-10'|'100.0'|'2024-12-30'|90.0|'0'|
