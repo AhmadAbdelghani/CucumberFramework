@@ -7,12 +7,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.AmazonHomePage;
+import utilities.BrowserUtils;
 import utilities.Driver;
 import utilities.PropertiesReader;
 
 public class AmazonLoginSteps {
 
 	AmazonHomePage lp = new AmazonHomePage();
+	BrowserUtils util = new BrowserUtils();
 	
 	@Given("I am on amazon home page")
 	public void i_am_on_amazon_home_page() {
@@ -20,17 +22,19 @@ public class AmazonLoginSteps {
 	}
 	@Given("The sign in button displays")
 	public void the_sign_in_button_displays() {
-	  
+	  util.waitUntilElementVisible(lp.loginButton);
 	  Assert.assertTrue(lp.loginButton.isDisplayed());
 		
 	}
 	@When("I click on the sign in button")
 	public void i_click_on_the_sign_in_button() {
+		util.waitUntilElementClickable(lp.loginButton);
 		lp.loginButton.click();
 	}
 	
 	@Then("I should be directed to login page")
 	public void i_should_be_directed_to_login_page() {
+		util.waitUntilElementVisible(lp.continueButton);
 	   Assert.assertTrue(lp.continueButton.isDisplayed());
 	   
 	}
