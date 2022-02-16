@@ -12,7 +12,7 @@ public class AmazonSearchPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
-	@FindBy (xpath  = "//span[@class='a-color-state a-text-bold']")
+	@FindBy (id  = "twotabsearchtextbox")
 	public WebElement searchBox;
 	
 	@FindBy (id = "nav-search-submit-button")
