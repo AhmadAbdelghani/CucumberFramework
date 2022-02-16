@@ -73,7 +73,7 @@ public class TradeAppTradesPage {
 	@FindBy (xpath = "//input[@name='symbol']")
 	public  WebElement symbolBox;
 	
-	@FindBy (xpath = "(//button[@type='submit'])[1]")
+	@FindBy (xpath = "//button[text()='Search']")
 	public  WebElement searchBtn;
 	
 	
