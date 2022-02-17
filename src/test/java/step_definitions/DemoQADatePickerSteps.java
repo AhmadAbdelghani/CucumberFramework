@@ -30,7 +30,7 @@ public class DemoQADatePickerSteps {
 	}
 	
 	@When("I enter {string} to date picker")
-	public void i_enter_to_date_picker(String date) throws InterruptedException {
+	public void i_enter_to_date_picker(String date)  {
 		
 		utils.clearValueOnTheField(datePickerPage.firstDatePicker);
 		//datePickerPage.firstDatePicker.sendKeys(date);

@@ -46,7 +46,7 @@ public class SauceDemoLoginSteps {
 	// valid test ends
 	
 	
-	//Ivnalid test Starts
+	//Invalid test Starts
 	@When("I enter invalid user name {string} and valid password {string}")
 	public void i_enter_invalid_user_name_and_valid_password(String username, String password) {
 		page.username.sendKeys(username);

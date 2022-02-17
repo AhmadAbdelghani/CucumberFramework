@@ -12,7 +12,7 @@ public class AmazonSearchPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
-	@FindBy (id = "twotabsearchtextbox")
+	@FindBy (id  = "twotabsearchtextbox")
 	public WebElement searchBox;
 	
 	@FindBy (id = "nav-search-submit-button")
