@@ -1,3 +1,4 @@
+@Regression
 Feature: Amazon search
       As a user i should be anle to search an item 
       and th search should releven to search cririria
