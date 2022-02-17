@@ -1,5 +1,4 @@
-
-@tag
+@Regression
 Feature: Amazon login
   I want to be abble to login with valid credentials.
   I should not be logged in with invalid credentials.
