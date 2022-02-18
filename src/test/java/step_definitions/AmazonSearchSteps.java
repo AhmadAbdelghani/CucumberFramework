@@ -20,6 +20,7 @@ public class AmazonSearchSteps {
 	
 	@When("I click search button")
 	public void i_click_search_button() {
+		util.waitUntilElementVisible(searchPage.searchBtn);
 	    searchPage.searchBtn.click();
 	}
 	
