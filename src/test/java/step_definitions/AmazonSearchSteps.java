@@ -17,10 +17,12 @@ public class AmazonSearchSteps {
 	public void i_search_item(String item) {
 	    searchPage.searchBox.sendKeys(item);
 	}
+	
 	@When("I click search button")
 	public void i_click_search_button() {
 	    searchPage.searchBtn.click();
 	}
+	
 	@Then("search item {string} should be displayed in the search bar")
 	public void search_item_should_be_displayed_in_the_search_bar(String item) {
 		util.waitUntilElementVisible(searchPage.searchedItemText);
