@@ -1,10 +1,9 @@
-@Regression
 Feature: Amazon login
   I want to be abble to login with valid credentials.
   I should not be logged in with invalid credentials.
   
 
-  @amazonLogin @SmokeTests
+  @amazonLogin 
   Scenario: User should be directed to login page 
   Given I am on amazon home page
   And The sign in button displays

@@ -1,9 +1,8 @@
-@Regression
 Feature: Amazon search
       As a user i should be anle to search an item 
       and th search should releven to search cririria
 
-  @amazonSearch @SmokeTests
+  @amazonSearch 
   Scenario Outline: user is able to to search multiple data set
     Given I am on amazon home page
     When I search item "<items>"
