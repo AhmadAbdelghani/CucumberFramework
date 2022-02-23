@@ -86,7 +86,7 @@ public class TradeAppTrades {
 	
 	@Then("The trade data is deleted on the Database")
 	public void the_trade_data_is_deleted_on_the_database() {
-	    String sqlQuery = "delete from records where +symbol"+"'"+stockSymbol+"'";
+	    String sqlQuery = "delete from records where symbol="+"'"+stockSymbol+"'";
 	    dbUtil.deleteRecord(sqlQuery);
 	}
 	// Test add trade #ENDS 
