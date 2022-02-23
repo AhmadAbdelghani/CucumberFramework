@@ -50,7 +50,7 @@ Feature: As a user I am able to perform Trade app add trade functions
     @InsertDB  @TradeJournal @TradeJournal @SmokeTests
     Scenario: As a user, I am able to insert a trade to Database
     Given I executed Insert query with the following data to Database
-    |'23'|'1'|'0'|'Jmeter'|'2021-10-10'|'100.0'|'2024-12-30'|90.0|'0'|
+    |'90'|'1'|'0'|'Jmeter'|'2021-10-10'|'100.0'|'2024-12-30'|90.0|'0'|
     Given I am on the Trade app login page
     When I enter username "Ahmad" and password "SuperAhmad123!"
     And I click on sign in button
